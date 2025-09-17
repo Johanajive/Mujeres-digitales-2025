@@ -55,7 +55,7 @@ const menu = async () => {
                     console.log("Error: No se puede dividir entre 0.");
                 } else {
                     console.log("====DIVISION====");
-                    console.log(`El resultado de la multiplicacion es: \n${numeroUno} / ${numeroDos} = ${numeroUno / numeroDos}`);
+                    console.log(`El resultado de la division es: \n${numeroUno} / ${numeroDos} = ${numeroUno / numeroDos}`);
                 }
                 break;
             case "%":
