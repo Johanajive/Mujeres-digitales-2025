@@ -1,0 +1,1 @@
+export type IProduct = {id: number, name: string, amount: number, price: number, category: string, description: string}
