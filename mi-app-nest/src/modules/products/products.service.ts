@@ -39,9 +39,9 @@ export class ProductsService {
   }
 
   remove(id: number) {
-    const index = this.products.findIndex((product) => product.id === id);
-    if (index === -1) throw new NotFoundException('Producto no encontrado');
-    this.products.splice(index, 1);
+    const product = this.products.findIndex((product) => product.id === id);   
+    if (product === -1) throw new NotFoundException('No se puede eliminar el producto con id negativo');
+    this.products.splice(product, 1);
     return { deleted: true };
   }
 }
